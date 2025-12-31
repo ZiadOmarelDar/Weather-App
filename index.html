@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="background">
+    <div class="overlay"></div>
+
+    <div class="container">
+
+      <form id="weather-form" class="search-form">
+        <button type="submit">بحث</button>
+        <input
+          type="text"
+          id="location-input"
+          placeholder="أدخل اسم المدينة"
+          required
+        />
+      </form>
+
+      <div id="loading" class="loading hidden">جاري التحميل...</div>
+      <div id="error-message" class="error hidden"></div>
+
+      <div id="weather-main" class="hidden">
+        <div class="main-info">
+          <h2 id="location-name"></h2>
+          <h1 id="temperature"></h1>
+          
+          <p id="current-date"></p>
+
+          <img id="weather-icon" alt="أيقونة الطقس" />
+
+          <div class="details">
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+          </div>
+        </div>
+
+        <!-- <canvas id="temp-chart"></canvas> -->
+        <div id="forecast-list" class="forecast-cards"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
