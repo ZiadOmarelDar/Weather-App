@@ -182,9 +182,9 @@ button:hover {
   #temperature { font-size: 90px; }
   #location-name { font-size: 36px; }
   #weather-icon { width: 150px; height: 150px; }
-  .details { flex-direction: column; gap: 20px; }
+  .details { flex-direction: column; gap: 20px;  width: 270px; margin-right: 50px; }
   .details p { margin: 10px 0; }
   .forecast-item { width: 120px; padding: 20px; }
-  .search-form { flex-direction: column; }
-  #location-input, button { border-radius: 50px; width: 100%; margin: 10px 0; }
+  .search-form { flex-direction: row; }
+  #location-input, button { border-radius: 50px 0 0 50px , 0 50px 50px 0; width: 30%; margin: 10px 0; }
 }
